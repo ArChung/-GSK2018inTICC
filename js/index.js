@@ -15,9 +15,30 @@ $(document).ready(function () {
     initPop();
 
     initScale();
+
+    $('.homeBtn').click(function () {
+        switchPageChannel(1,false)
+      })
+
+    initBtnWrap();
 });
 
 
+function initBtnWrap() {  
+    $('.p1 .btn1').click(function () {  
+        switchPageChannel(2,true)
+    })
+
+    $('.p1 .btn2').click(function () {  
+        switchPageChannel(3,true)
+        
+    })
+
+    $('.p1 .btn3').click(function () {  
+        switchPageChannel(4,true)
+        
+    })
+}
 
 function playNextAni(pageChannel,isNext) {
 
